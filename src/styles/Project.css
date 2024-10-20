@@ -1,0 +1,84 @@
+.projects {
+    padding: 50px 20px; /* Add padding */
+    background-color: black; /* Light background for contrast */
+  }
+  
+  .projects h2 {
+    text-align: center; /* Center the heading */
+    font-family: 'Popins'; /* Heading font */
+    font-size: 32px; /* Font size */
+    color: #ffac05; /* Heading color */
+    margin-bottom: 30px; /* Space below heading */
+  }
+  
+  .projects-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Wrap to new line when needed */
+    justify-content: center; /* Center the cards */
+  }
+  
+  .project-card {
+    background: #fff; /* Card background color */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 15px; /* Space between cards */
+    width: 300px; /* Fixed width */
+    overflow: hidden; /* Prevent overflow */
+    transition: transform 0.3s; /* Transition effect for hover */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+  .project-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .project-name {
+    font-family: 'Poppins', sans-serif; /* Font for project name */
+    font-size: 20px; /* Font size for project name */
+    margin: 15px 0; /* Space around project name */
+    text-align: center; /* Center the text */
+  }
+  
+  .project-description {
+    font-family: 'Roboto', sans-serif; /* Font for description */
+    font-size: 16px; /* Font size for description */
+    margin: 0 15px 15px; /* Space for description */
+    text-align: justify; /* Justify the text */
+  }
+  
+  .github-button {
+    width: 100px;
+    display: block; /* Block display */
+    text-align: center; /* Center the button */
+    margin: 10px auto; /* Center with margin */
+    padding: 10px 20px; /* Padding for button */
+    background-color: #1f3c5c; /* Button color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for button */
+    transition: background-color 0.3s; /* Transition for background color */
+  }
+  .liveDemo-button {
+    width: 100px;
+    display: block; /* Block display */
+    text-align: center; /* Center the button */
+    margin: 10px auto; /* Center with margin */
+    padding: 10px 20px; /* Padding for button */
+    background-color: #1f3c5c; /* Button color */
+    color: #fff; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for button */
+    transition: background-color 0.3s; /* Transition for background color */
+  }
+  
+  .github-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+  .liveDemo-button:hover {
+    background-color: #0056b3; /* Darker on hover */
+  }
+  

@@ -1,0 +1,43 @@
+/* src/styles/About.css */
+.about {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    background-color: black; /* Optional background color */
+  }
+  
+  .about-content {
+    flex: 1; /* Take up 50% of the space */
+    padding: 20px;
+  }
+  
+  .about-image {
+    flex: 1; /* Take up 50% of the space */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+  }
+  
+  .about-image img {
+    max-width: 100%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    width: 50%;
+    border-radius: 5%;
+  }
+  
+  .dashed-line {
+    border-top: 2px dashed #ccc; /* Dashed line style */
+    margin: 20px 0; /* Spacing around the line */
+  }
+  
+  .heading{
+    color: #ffac05; /* Heading color */
+  }
+  
+  .about-content p {
+    color: white;
+    font-size: large; /* Paragraph text color */
+    text-align: justify;
+  }
+  

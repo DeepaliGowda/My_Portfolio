@@ -1,0 +1,73 @@
+.skills {
+    display: flex;
+    justify-content: center; /* Center the cards */
+    align-items: center; /* Align vertically */
+    padding: 50px 20px; /* Add padding */
+    height: auto; /* Full height */
+    background: white
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: space-between; /* Space between the cards */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for large screens */
+  }
+  
+  .skill-card {
+    background: black; /* Card background color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 40%; /* Card width */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effect for hover */
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  }
+  
+  .skill-card h2 {
+    text-align: center; /* Center the heading */
+    font-size: 28px; /* Font size for heading */
+    color: #ffac05; /* Text color */
+    margin-bottom: 15px; /* Space below heading */
+    font-family:'Popins' ; /* Change font family */
+    font-weight: bold; /* Make the heading bold */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 1px; /* Spacing between letters */
+  }
+  
+  .skill-card ul {
+    list-style: none; /* Remove bullet points */
+    padding-left: 20px; 
+    padding-top: 10px;
+  }
+  
+  .skill-card li {
+    margin: 10px 0; /* Spacing between items */
+    text-align: left; /* Align the text to the left */
+    font-size: 20px; /* Font size for items */
+    color: white; /* Text color */
+    font-family: 'Arial', sans-serif; /* Change font family */
+    font-weight: 500; /* Medium weight for items */
+    transition: color 0.3s; /* Transition for color change */
+    position: relative; /* Positioning for the pseudo-element */
+    padding-left: 30px; /* Padding for text to accommodate the icon */
+  }
+  
+  .skill-card li:before {
+    content: "✓"; /* Checkmark character */
+    color: white; /* Color of the checkmark */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Align to the left */
+    font-size: 24px; /* Size of the checkmark */
+    line-height: 20px; /* Align with text */
+  }
+  
+  .skill-card li:hover {
+    color: #ffac05; /* Change color on hover */
+    font-weight: bold; /* Bold text on hover */
+  }
+  

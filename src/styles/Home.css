@@ -1,0 +1,110 @@
+/* Home.css */
+.home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #171514, #f4f1f3, #EDDFE0, #AB886D); /* Gradient colors */
+  background-size: 400% 400%; /* Controls the size of the gradient background */
+  animation: gradientBG 10s ease infinite; /* Adding the animation */
+  color: #1f3c5c;
+  text-align: center;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-content {
+  max-width: 800px;
+}
+
+.home h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.home h1 span {
+  color: #3B3030; /* Highlight color for your name */
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.hire-me {
+  background-color: #3B3030;
+}
+
+.download-resume {
+  background-color: #1f3c5c;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 3rem;
+  }
+
+  .home h2 {
+    font-size: 2rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spacing between icons */
+}
+
+.social-icons a {
+  color: #1f3c5c; /* Icon color */
+  font-size: 2rem; /* Size of the icons */
+  transition: color 0.3s; /* Transition for hover effect */
+}
+
+.social-icons a:hover {
+  color: #3B3030; /* Change color on hover */
+}

@@ -1,0 +1,93 @@
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black; /* Semi-transparent background */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Navigation list */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px; /* Max width to center content */
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Navigation items */
+.nav-item {
+  margin: 0 15px; /* Spacing between items */
+}
+
+/* Link styling */
+.nav-item a {
+  font-family: 'Poppins', sans-serif; /* Use your preferred font */
+  font-size: 18px;
+  color: #fff; /* White text color */
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s, color 0.3s; /* Hover effects */
+}
+
+/* Hover effects for links */
+.nav-item a:hover {
+  background-color: #1f3c5c; /* Blue background on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    display: none; /* Hide by default */
+    position: absolute; /* Position it absolutely */
+    top: 60px; /* Below navbar */
+    left: 0;
+    right: 0;
+    background-color: rgba(51, 51, 51, 0.9); /* Match navbar background */
+    padding: 15px 0;
+    transition: display 0.3s; /* Smooth display transition */
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Spacing for vertical alignment */
+  }
+
+  /* Show nav list when toggle class is active */
+  .navbar.active .nav-list {
+    display: flex; /* Show the nav items */
+  }
+
+  /* Navbar adjustments */
+  .navbar {
+    padding: 10px 15px;
+  }
+}
+
+/* For mobile toggle button */
+.mobile-nav-toggle {
+  display: none; /* Hide by default */
+}
+
+/* Show the toggle button on small screens */
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block; /* Show the toggle button */
+    cursor: pointer;
+    color: white; /* Color for the toggle button */
+    font-size: 20px;
+  }
+}
